@@ -27,7 +27,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // APPBAR dengan gradient dark
       appBar: AppBar(
         title: const Text(
           "Pokédex",
@@ -54,12 +53,10 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-
       backgroundColor: const Color(0xFF121212),
 
       body: Column(
         children: [
-          // SEARCH BAR dark mode
           Padding(
             padding: const EdgeInsets.all(12),
             child: TextField(
@@ -83,8 +80,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-
-          // GRID CARD dengan background image + overlay gradient
           Expanded(
             child: GridView.builder(
               padding: const EdgeInsets.all(12),
