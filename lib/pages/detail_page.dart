@@ -15,7 +15,6 @@ class DetailPage extends StatelessWidget {
       backgroundColor: const Color(0xFF121212),
       body: Column(
         children: [
-          // HEADER dengan background image + overlay hijau
           Container(
             height: 320,
             width: double.infinity,
@@ -27,7 +26,7 @@ class DetailPage extends StatelessWidget {
                 image: AssetImage(pokemon.image),
                 fit: BoxFit.cover,
                 colorFilter: ColorFilter.mode(
-                  color.withOpacity(0.7), // overlay hijau transparan
+                  color.withOpacity(0.7),
                   BlendMode.srcOver,
                 ),
               ),
@@ -82,8 +81,6 @@ class DetailPage extends StatelessWidget {
               ],
             ),
           ),
-
-          // CONTENT
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(20),
