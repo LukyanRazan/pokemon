@@ -5,8 +5,6 @@ class Pokemon {
   final String desc;
   final String role;
   final String weakness;
-
-  // 🔥 TAMBAHAN
   final String? ability;
   final int? hp;
   final int? attack;
